@@ -17,7 +17,7 @@ class HomeTaskTwo {
         boolean result = negativePositiveNumber(-245);
         System.out.println(result? "true" : "false");
 
-        printName();
+        printName("Elena Ant, ", 25);
     }
 
     static boolean interval(int a, int b) {
@@ -30,14 +30,13 @@ class HomeTaskTwo {
     }
 
     static boolean negativePositiveNumber(int a) {
-        return a >= 0;
+        return a < 0;
     }
 
-    static void printName() {
-        String name = "Elena Ant";
+    static void printName(String name, int age) {
         int i;
         for (i = 0; i < 5; i++) {
-            System.out.print(name);
+            System.out.print(name + age);
             System.out.println();
         }
     }
