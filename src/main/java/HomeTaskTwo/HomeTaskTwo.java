@@ -9,13 +9,22 @@ package HomeTaskTwo;
 
 class HomeTaskTwo {
     public static void main(String[] args) {
-        boolean m = interval(5, 10);
-        System.out.println(m? "true" : "false");
+        System.out.println(interval(5,10));
+        System.out.println(interval(5,5));
+        System.out.println(interval(10,10));
+        System.out.println(interval(4,4));
+        System.out.println(interval(10,20));
+        separator();
 
         comparison(104);
+        comparison(-104);
+        comparison(0);
+        separator();
 
-        boolean result = negativePositiveNumber(-245);
-        System.out.println(result? "true" : "false");
+        System.out.println(negativePositiveNumber(-245));
+        System.out.println(negativePositiveNumber(245));
+        System.out.println(negativePositiveNumber(0));
+        separator();
 
         printName("Elena Ant, ", 25);
     }
@@ -39,6 +48,10 @@ class HomeTaskTwo {
             System.out.print(name + age);
             System.out.println();
         }
+    }
+
+    static void separator() {
+        System.out.println("----------------");
     }
 }
 
